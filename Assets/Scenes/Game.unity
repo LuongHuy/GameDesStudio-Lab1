@@ -2566,6 +2566,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909422402}
   m_CullTransparentMesh: 1
+--- !u!1 &1930030521 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1024724645384130756, guid: 6e55b182ef662354dae8f2eb6de3685f, type: 3}
+  m_PrefabInstance: {fileID: 6686810695022881684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1930030525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930030521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9da6185320c7dc94782d27d5e3dc7841, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+--- !u!50 &1930030526
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930030521}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1962358020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2893,10 +2938,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5158442684141329877, guid: 6e55b182ef662354dae8f2eb6de3685f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1024724645384130756, guid: 6e55b182ef662354dae8f2eb6de3685f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1930030525}
+    - targetCorrespondingSourceObject: {fileID: 1024724645384130756, guid: 6e55b182ef662354dae8f2eb6de3685f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1930030526}
   m_SourcePrefab: {fileID: 100100000, guid: 6e55b182ef662354dae8f2eb6de3685f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
